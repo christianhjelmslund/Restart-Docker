@@ -28,7 +28,7 @@ to make it an executable file. Now, if you try to run
 ``` bash
 ./restart_docker.sh
 ```
-you'll see what you expect. Anyways, that is nice I guess, but if you navigate to a different directory and runing ./restart_docker.sh it won't, because yeah, the file is not in that directory. So, what you want to do is to move the file to your PATH, which by is in:
+you'll see what you expect. Anyways, that is nice I guess, but if you navigate to a different directory and runing ```./restart_docker.sh``` it won't, because yeah, the file is not in that directory. So, what you want to do is to move the file to your PATH, which by is in:
 ``` bash
 usr/local/bin
 ``` 
