@@ -28,11 +28,11 @@ to make it an executable file. Now, if you try to run
 ``` bash
 ./restart_docker.sh
 ```
-you'll see what you expect. Anyways, that is nice I guess, but if you navigate to a different directory and runing ```./restart_docker.sh``` it won't, because yeah, the file is not in that directory. So, what you want to do is to move the file to your PATH, which by is in:
+you'll see what you expect. Anyways, that is nice I guess, but if you navigate to a different directory and runing ```./restart_docker.sh``` it won't, because yeah, the file is not in that directory. So, what you want to do is to move the file to your PATH, which by default is in:
 ``` bash
-usr/local/bin
+/usr/local/bin
 ``` 
-but to be sure, you can always find the path by running: ``` bash echo $PATH ``` 
+but to be sure, you can always find the path by running: ```echo $PATH ``` 
 which will show you something like: 
 ``` bash
 /usr/local/bin:/usr/bin
@@ -51,7 +51,7 @@ you'll see it still works! Now, just to top it off and make it a bit more nice, 
 ```
 alias restart='restart_docker.sh'
 ```
-which gives the restart_docker.sh an alias, restart. You can ofcourse choose a different name. Now, anywhere you navigate, you can just type ```restart``` and it will clean up your docker containers. Again, the reason for this repo is more on how to add scripts to your path, so be creative and make your own scripts that you use often.
+which gives the restart_docker.sh an alias, restart. You can of course choose a different name. Now, an **important(!)** part is to close your terminal and restart it again. If you don't do that, it will not have updated the alias. When you have restarted it, you can just type ```restart``` and it will clean up your docker containers. This can be done everywhere you navigate now. Again, the reason for this repo is more on how to add scripts to your path, so be creative and make your own scripts that you use often.
 
 
 
